@@ -12,7 +12,7 @@ if (isset($_POST['prof-submit'])) {
     $file = $_FILES['prof-image'];
     $file_name = $file['name'];
     $file_tmp_name = $file['tmp_name'];
-    $file_error = $file['name'];
+    $file_error = $file['error'];
     $file_size = $file['size'];
     
     $bio = $_POST['bio'];
@@ -43,7 +43,7 @@ if (isset($_POST['prof-submit'])) {
         if(!mysqli_stmt_prepare($stmt, $sql)){
             header("Location: ../profile.php?error=DQLInjection");
         exit();
-        }esle{
+        }else{
             mysqli_stmt_bind_param($stmt,"sss", $destination, $bio, $uname);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
