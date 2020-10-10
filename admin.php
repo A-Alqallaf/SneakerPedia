@@ -11,7 +11,7 @@ if (isset($_SESSION['uid'])) {
 ?>
     <div class="h-50 center-me text-center">
         <div class="my-auto upload-container">
-            <form action="includes/gallary-helper.php" method="POST" enctype="multipart/form-data">
+            <form action="includes/gallery-helper.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
                     <img src="images/logged in.jpg" onclick="triggered();" id="gallery-display">
                     <input type="file" name="gallery-image" id="gallery-image" onchange="preview(this)"

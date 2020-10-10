@@ -4,7 +4,7 @@ require 'dbhandler.php';
 define('MB',1048576);
 
 if (isset($_POST['gallery-submit'])){
-    $file = $_FILES['galley-image'];
+    $file = $_FILES['gallery-image'];
     $file_name = $file['name'];
     $file_tmp_name = $file['tmp_name'];
     $file_error = $file['error'];
