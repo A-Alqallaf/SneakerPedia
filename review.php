@@ -7,7 +7,7 @@ require 'includes/review-helper.php';
 <main>
     <span id="testAvg"></span>
     <div class="container" align="center" style="max-width: 800px">
-        <div class="my=auto">
+        <div class="my-auto">
             <form id="review-form" action="includes/review-helper.php" method="post">
                 <div class="container">
                     <i class="fa fa-star fa-2x star-rev" data-index="1"></i>
@@ -16,8 +16,8 @@ require 'includes/review-helper.php';
                     <i class="fa fa-star fa-2x star-rev" data-index="4"></i>
                     <i class="fa fa-star fa-2x star-rev" data-index="5"></i>
                 </div>
-                <div class="form-group" style="margin-top: 15px";>
-                    <lable class="title-lable" for="review-title" style="font-size: 16px; font=weight: bold">Title</lable>
+                <div class="form-group" style="margin-top: 15px;">
+                    <lable class="title-label" for="review-title" style="font-size: 16px; font=weight: bold">Title</lable>
                     <input type="text" name="review-title" id="review-title" style="width: 100%; margin-bottom: 10px">
                     <textarea class="form-control" id="review-text" name="review" cols="50" rows="3" placeholder="Enter a comment..."></textarea>
                     <input type="hidden" name="rating" id="rating">
@@ -71,8 +71,8 @@ $(document).ready(function() {
 
 
     function setStars(max){
-        for(var i=0: i<max: i++){
-            $('.star-rev:eq('+i+')').css('color', 'goldenrod');  
+        for(var i=0; i<max; i++){
+            $('.star-rev:eq(' + i + ')').css('color', 'goldenrod');  
         }
         document.getElementById('rating').value = parseInt(localStorage.getItem('rating'));
         console.log(id);
