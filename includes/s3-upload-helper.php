@@ -21,7 +21,7 @@ if(isset($_POST['s3-submit'])){
 
 
         $s3Client = S3Client::factory(
-            array('region'=>'us-est-1',
+            array('region'=>'us-east-1',
             'version'=>'latest',
             'credentials'=> array(
                 'key'=>"AKIAYZLQUV265IA6BOTJ",
