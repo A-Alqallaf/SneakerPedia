@@ -36,7 +36,7 @@ require 'includes/header.php'
     </div>
 		<div class="c">
 			<div class="ca">
-                <img src="images/jordan 1.jpg" alt="jordan One High">
+                <img src="sneakers/Jordan 1 mag.jpg" alt="jordan One High">
                 <div class="con">
                  <h2>Jordan One High</h2>
                  <p class="title"> First Jordan One</p>
